@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Earth Guardians</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<!----- webfonts ------>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+		<!----- webfonts ------>
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+                
+	</head>
+	<body>
+		<!----- start-header---->
+			<div id="home" class="header">
+				<div class="top-header">
+						<div class="logo">
+							  <a href="#"><img src="images/logo.png" alt=""></a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Home </a></li>
+								<li><a href="#feature" class="scroll">Sign Up/Login</a></li>
+								<li><a href="#reviewes" class="scroll">Forum</a></li>
+								<li><a href="#demo" class="scroll">Basic Info</a></li>
+								<li><a href="#download" class="scroll">Live Map</a></li>
+								<li><a href="#screenhot" class="scroll">VR Game</a></li>
+								<li><a href="#about" class="scroll">about</a></li>
+								<li><a href="#contact" class="scroll">Contact</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+		<!----- //End-header---->
+		<!----- banner ---->
+			<div class="banner">
+				<div class="container">
+					<div class="banner-info">
+						<div class=" col-md-6 appp">
+							 <img src="images/mbl-app.png" alt="">
+						</div>
+						<div class="col-md-6 banner-text">
+							<h1>Earth Guardians</h1>
+							<p> Our application is divided into 4 main categories; the first category is a basic information about each disaster and provide some instructions to survive from each one. The second section is a forum which can anyone share his/her previous experience with any disaster and how they deal with them. The third one is a live map which shows the places of the disasters and how it far from your location. The last section is a simulation game by using the virtual reality which simulates the disaster for you and to see whether you deal with the disaster in the right way or not. </p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+			</div>
+		</div>
+			<!----- banner ---->
+	  <!-----feature ---->
+			<div id="feature" class="features">
+				<div class="container">
+					 <h3>Sign Up/Login</h3>
+                     <center>
+                     <iframe style="overflow: hidden; overflow-y: hidden; width:100%; height:600px; border:hidden;" src="sign up-login/index.html"></iframe>
+                     </center>
+					<div class="Feature">
+					<center>
+
+
+                    </center>
+						<div class="clearfix"> </div>
+					</div>
+			</div>
+		</div>
+			<!-----//feature ---->
+			<!----- /strat-Reviews---->
+				<div id="reviewes" class="Reviews">
+		       		<div class="container">
+		       		   <div class="review-head text-center">
+                       <br>
+						  <h3>Forum</h3>
+                        <br>
+					    </div>
+          <center>
+          <iframe style="overflow: hidden; width:100%; height:700px; border:hidden;" src="forum/index.html"></iframe>
+		  </center>
+               			<div class="clearfix"> </div>
+		       		</div>
+		       	</div>
+	  <!---//End-Reviews----->
+<!----- /strat-demo---->
+				<div id="demo" class="demo">
+		       		<div class="container">
+		       		   <div class="demo-head text-center">
+						  <h3>Basic Info</h3>
+					    </div>
+		       			<div class="row Demo text-center">
+                     <center>
+                     <iframe style="overflow: hidden; overflow-y: hidden; width:100%; height:800px; border:hidden;" src="details/index.html"></iframe>
+                     </center>
+			       			
+		       			<div class="clearfix"> </div>
+		       		</div>
+		       	</div>
+	  <!---//End-Reviews----->
+	  <!----- /strat-Download---->
+							<div id="download" class="demo">
+		       		<div class="container">
+		       		   <div class="demo-head text-center">
+						  <h3>Live Map</h3>
+					    </div>
+
+	      <center>
+          <iframe style="overflow: hidden; width:100%; height:670px; border:hidden;" src="http://earthalerts.manyjourneys.com/web/"></iframe>
+		  </center>
+	       				</div>
+                        <br><br>
+	       				<div class="clearfix"> </div>
+	       			</div>
+	       				
+	       			</div>
+	       		</div>
+	  <!---//End-Download----->
+	  <!--- Slider Starts Here --->
+	<div id="screenhot" class="slider">
+		<div class="container">
+			<!---- testmonials ---->
+			<h3>VR Game</h3>
+				<div class="test-monials">
+				<!----sreen-gallery-cursual---->
+						<div class="sreen-gallery-cursual">
+							 <!-- requried-jsfiles-for owl -->
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 1,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : false,
+							        navigationText :  false,
+							        pagination : true,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+							 <!-- start content_slider -->
+						       <div id="owl-demo" class="owl-carousel">
+					                <div class="item">
+					                		<div class="test-monial">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4_Tekuhazik" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					                	</div>
+					                </div>
+					                 <div class="item">
+					                		<div class="test-monial">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wICw58oX4AQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>					                	</div>
+					                </div>
+				              </div>
+						<!--//sreen-gallery-cursual---->
+                        <div style=" font-size:20px; color:#FFF;">
+                                    <p>While playing the game, messages written in the answer cards help players understand what natural disaster is and how some actions can reduce the impact of disasters. Simulations of six types of disaster (Earthquake, Tsunami, Floods, Landslides, Volcano Eruption, Hurricane) will be offered. Players who attain a level of 75 points are expected to survive a disaster.</p>
+                                    </div>
+                                    <center><img style="width:200px; height:70;" src="images/play_prism_hlock_2x.png" herf="https://play.google.com/store?fbclid=IwAR1WgMXSGmbNfrXVi2xlT-4NTrwwy8IlURJGSEh9QXrTe8-GmGVQbxEBQzA"></center>
+					</div>
+				</div>
+			</div>
+		</div>
+				<!---- testmonials ---->
+			<!----- /strat-About---->
+			<div id="about" class="about">
+	       		<div class="container">
+	       		   <div class="gallery-head text-center">
+					  <h3>ABOUT Our Team</h3>
+					  <p>
+                      Jomana Ashraf Mahmoud
+                      <br>
+					  Mariam Khaled
+                      <br>
+                      Fady Nabil Ibrahim
+                      <br>
+                      Omar Yasser Hussein
+                      <br>
+                      Omar Mohsen
+                      </p>
+				    </div>
+	       			<div class="row text-center">
+	       				<div class="col-md-4 about_grid">
+	       					 <img src="images/ab-1.png" alt="">
+	       				</div>
+	       				<div class="col-md-4 about_grid">
+	       					<img src="images/ab-2.png" alt="">
+	       				</div>
+	       				<div class="col-md-4 about_grid">
+	       					<img src="images/ab-3.png" alt="">
+	       				</div>
+	       				<div class="clearfix"> </div>
+	       			</div>
+	       		</div>
+	       	</div>
+	  <!---//End-About----->
+	    <!---/start-contact----->
+	   <div class="contact" id="contact">
+		      	<div class="container">
+		      		  <h3>CONTACT</h3>
+		      			  <div class="contact-form">
+				  	        <form>
+					    	    <p class="comment-form-author"><label for="author"> Name</label>
+					    	    	<input type="text" class="textbox" value="Enter your name..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your name...';}">
+						    	</p>
+						        <p class="comment-form-author"><label for="author">Email</label>
+						     	   <input type="text" class="textbox" value="Enter your email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email...';}">
+						        </p>
+						        <p class="comment-form-author"><label for="author">Message</label>
+						    	  <textarea value="Enter your message..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Enter your message...</textarea>
+						        </p>
+						        <input name="submit" type="submit" id="submit" value="Submit">
+					        </form>
+				          </div>
+		      	</div>
+		      </div>
+
+	 <!---//end-contact----->
+	   <!---/start-footert----->
+	   	<div class="footer">
+	   		<div class="container">
+				<div class="copy-right">
+					<p>&copy; 2018  All rights  Reserved | Template by &nbsp;<a href="#">Fady</a></p>
+
+				</div>								
+			</div>
+
+	   	</div>
+	   <!---//end-footert----->
+				<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</body>
+</html>
